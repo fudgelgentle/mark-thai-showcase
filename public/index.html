@@ -1,0 +1,117 @@
+<!--
+  ***
+  Pu Thavikulwat
+  04/19/2022
+  AD, Itani,Abdul Rahman
+
+  This is the index.html page where I tried to create a home page for a
+  restaurant website. There is a navigation bar that can be clicked to access
+  other html pages. Only shop.html can be accessed through this navbar.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/floating-menu.css">
+    <link rel="icon" href="img/tab.png">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- * Added cookies -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <!-- Mobile responsive -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="cookie.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!-- & Appending navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color:#F7CE46;">
+      <a class="navbar-brand ml-2" href="index.html">
+        <img src="img/logo.png" alt="logo" id="png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-item nav-link mx-2" href="menu.html">MENU</a>
+          <a class="nav-item nav-link mx-2" href="shop.html">SHOP</a>
+          <a class="nav-item nav-link mx-2" href="index.html#no-reverse">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+    <!-- & -->
+
+    <main>
+      <!-- ?BLACK MAGIC PART -->
+      <div class="masthead" style="background-image: url('img/homeimg.png')">
+        <div class="color-overlay d-flex justify-content-center align-items-center">
+          <h1>ABOUT</h1>
+        </div>
+      </div>
+      <!-- ????????????????? -->
+
+      <div class="container">
+        <div class="text-side">
+          <h2>Hello thai food lovers!</h2>
+          <h2>Uncle Mark offers full line of</h2>
+          <h2>Homemade Thai products:</h2>
+
+          <ul>
+            <li>Thai food box Grab & Go Ready to eat</li>
+            <li>Thai curry paste Ready to Cook ( 6 )</li>
+            <li>Pad Thai sauce in a bottle</li>
+            <li>Pad See Ew sauce in a bottle</li>
+            <li>Spicy KaPraw sauce in a bottle</li>
+            <li>Spicy Kee Mao sauce in a bottle</li>
+            <li>Thai Spicy Hot Sauce Dip ( 4 oz )</li>
+          </ul>
+
+          <h3>Or stop by at our shop for take out Thai food.</h3>
+          &nbsp
+          <h3>Thank you for your support!</h3>
+          <div class="btn-container">
+            <button type="button" id="left-btn" onclick="location.href='shop.html'">Shop Now</button>
+            <button type="button" id="right-btn" onclick="location.href='menu.html'">View Menu</button>
+          </div>
+        </div>
+        <div class="img-side">
+          <img src="img/store.jpeg" alt="store" id="store">
+        </div>
+      </div>
+      <div class="container" id="no-reverse">
+        <div class="text-side">
+          <h3><span>Visit Us At:</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1313 NE 43rd St, Seattle WA 98105</h3>
+          <h3><span>Contact Us:</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (206) 432-5902</h3>
+          <h3><span>Open hours:</span> &nbsp&nbsp&nbsp&nbsp&nbsp Monday-Friday <strong>12:00 (noon) - 7:00 pm</strong></h3>
+        </div>
+        <div class="img-side">
+          <iframe
+            width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7W6wNIsUkFQRLVUSj8Qz53g&key=AIzaSyAqBau4-j1CPRz-OTOM51vhEuXvulGijeM">
+          </iframe>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- & Floating Menu -->
+      <div id="floating-menu">
+        <!-- retrieved from "https://www.flaticon.com/free-icons/buy -->
+        <img src="img/cart.png" id="checkout" alt="cart">
+      </div>
+    </main>
+    <footer>
+      <!-- <p id="faded">this is a footer.</p> -->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+/*~ Cart part */
+#floating-menu {
+  display: flex;
+  position: fixed;
+  flex-direction: row-reverse;
+  background: #F7CE46;
+  padding: 10px 0px 10px 0px;
+  border-radius: 0px 30px 30px 0px;
+  /* box-shadow: 1px 1px 1px rgb(178, 178, 178); */
+  bottom: 120px;
+  left: 0px;
+  /* z-index makes the menu stay on top of other elements */
+  z-index: 100;
+  margin: 0;
+}
+
+#checkout {
+  margin-left: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#floating-menu img .items {
+  margin-right: -15px;
+  border-radius: 50%;
+}
+
+img.items, #checkout {
+  width: 27px;
+  height: 27px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~ */

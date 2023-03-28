@@ -1,0 +1,159 @@
+/*
+  Pu Thavikulwat
+  04/19/2022
+  AD, Itani,Abdul Rahman
+
+  This is the css file that styles the home page, or the index.html file.
+  It sets a fixed background image on the home page.
+*/
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  background-size: auto;
+  /* Makes background fixed regardless of screen size */
+  background-attachment: fixed;
+  background-image: url("../img/background2.png");
+}
+
+.container, .info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  row-gap: 50px;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 32px;
+}
+
+h1, h3, ul {
+  font-family: 'Raleway', sans-serif;
+}
+
+.text-side ul {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.text-side h3, .text-side li {
+  font-size: 18px !important;
+  line-height: 28px;
+}
+
+#store, iframe {
+  width: 35rem;
+  border-radius: 20px;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+}
+
+.text-side button {
+  font-family: 'Raleway', sans-serif;
+    /* padding: top, right, bottom, left */
+  padding: 10px 40px 10px 40px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+#left-btn {
+  background-color: #02c4ff;
+  /* border: 1px solid #44C9E5; */
+  border: none;
+  color: white;
+}
+
+#left-btn:hover {
+  background-color: #00a4d6;
+  transition: 0.5s;
+}
+
+#right-btn {
+  margin-left: 20px;
+  border: 1px solid black;
+  background-color: #f7f7f700;
+}
+
+#right-btn:hover {
+  background-color: #F7CE46;
+  border: none;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+.info-container {
+  margin-top: 200px;
+}
+
+/* * span tag is used for styling part of a text */
+span {
+  font-family: 'DM Serif Display', serif;
+  font-size: 24px;
+}
+
+/* & MOBILE MODE */
+@media screen and (max-width: 992px) {
+  #store {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    row-gap: 30px;
+    padding: 20px !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #no-reverse {
+    flex-direction: column;
+  }
+}
+/* &&&&&&&&&&&&&&& */
+
+/* ? BLACK MAGIC PART */
+.masthead {
+  height: 60vh;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.masthead h1 {
+  font-size: 75px;
+}
+
+.color-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(82, 82, 82, 0.5);
+}
+
+@media screen and (max-width: 992px) {
+  .masthead {
+    height: 30vh;
+  }
+
+  .masthead h1 {
+    font-size: 48px;
+  }
+}
+/* ???????????????????? */

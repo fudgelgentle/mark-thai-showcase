@@ -1,0 +1,139 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: auto;
+  /* Makes background fixed regardless of screen size */
+  background-attachment: fixed;
+  background-image: url("../img/background2.png");
+}
+
+.hidden {
+  display: none !important;
+}
+
+article > div {
+  /* margin: top, right, bottom, left */
+  margin: 0px 50px 50px 50px;
+}
+
+main article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+  /* border: 1px solid grey; */
+}
+
+.list-background a > img {
+  width: 300px;
+  height: 343px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.list-background {
+  /* background-color: #FEEA80; */
+  background-color: #F7CE46;
+  padding: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.detail-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.detail-container .right-side img {
+  width: 43px;
+  height: 51px;
+}
+
+.detail-container .right-side img:hover, #checkout {
+  cursor: pointer;
+}
+
+.detail-container .left-side a {
+  font-size: 18px;
+  color: #373737;
+}
+
+.detail-container .left-side a {
+  font-family: 'DM Serif Display', serif;
+  margin-top: 3px;
+  text-decoration: none;
+}
+
+.detail-container .left-side p {
+  font-family: 'Amiri', sans-serif;
+  margin-bottom: 0;
+}
+
+.detail-container .left-side {
+  /* border: 1px solid blue; */
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.detail-container .right-side {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid blue; */
+  padding-right: 25px;
+}
+
+.detail-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+h1, #loading p {
+  font-family: 'Raleway', sans-serif;
+}
+
+#item-list {
+  margin-top: 100px;
+}
+
+#notification {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+/* ? BLACK MAGIC PART */
+.masthead {
+  height: 60vh;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.masthead h1 {
+  font-size: 75px;
+}
+
+.color-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(171, 171, 171, 0.5);
+}
+
+@media screen and (max-width: 992px) {
+  .masthead {
+    height: 30vh;
+  }
+
+  .masthead h1 {
+    font-size: 48px;
+  }
+}
+/* ???????????????????? */

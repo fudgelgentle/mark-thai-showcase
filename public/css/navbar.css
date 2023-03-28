@@ -1,0 +1,54 @@
+.navbar-brand {
+  margin-left: 80px;
+}
+
+.navbar-nav {
+  margin-right: 80px;
+}
+
+button.navbar-toggler{
+  background: none;
+  border: none;
+  color: none;
+}
+
+nav {
+  font-family: 'Raleway';
+  font-weight: 400;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar-nav {
+  font-weight: 600;
+}
+
+.nav-link {
+  color: #000;
+}
+
+#png {
+  width: 186px;
+  height: 66px;
+}
+
+/* * FOR MOBILE */
+/* navbar-expand-lg collapses when width is less than 992 px */
+@media screen and (max-width: 992px) {
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+  .navbar-brand {
+    margin-left: 25px;
+  }
+  .navbar-nav {
+    font-size: 24px;
+    text-align: center;
+    margin-right: 0px;
+  }
+  #navbarText {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* font-size: calc(1.525rem + 3.3vw); */
+}
